@@ -39,13 +39,15 @@ public class DevoirServiceImpl implements DevoirService {
     }
 
     @Override
-    public void addClasse(ClasseDTO dto) {
+    public ClasseDTO addClasse(ClasseDTO dto) {
         classeService.addClasse(dto);
+        return dto;
     }
 
     @Override
-    public void updateClasse(ClasseDTO dto) {
+    public ClasseDTO updateClasse(ClasseDTO dto) {
         classeService.updateClasse(dto);
+        return dto;
     }
 
     @Override
@@ -64,13 +66,15 @@ public class DevoirServiceImpl implements DevoirService {
     }
 
     @Override
-    public void addSector(SectorDTO dto) {
+    public SectorDTO addSector(SectorDTO dto) {
         sectorService.addSector(dto);
+        return dto;
     }
 
     @Override
-    public void updateSector(SectorDTO dto) {
+    public SectorDTO updateSector(SectorDTO dto) {
         sectorService.updateSector(dto);
+        return dto;
     }
 
     @Override

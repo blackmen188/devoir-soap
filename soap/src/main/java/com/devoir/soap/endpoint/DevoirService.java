@@ -10,13 +10,13 @@ import java.util.List;
 public interface DevoirService {
     List<ClasseDTO> getAllClasses();
     ClasseDTO getClasseById(int id);
-    void addClasse(ClasseDTO dto);
-    void updateClasse(ClasseDTO dto);
+    ClasseDTO addClasse(ClasseDTO dto);
+    ClasseDTO updateClasse(ClasseDTO dto);
     void deleteClasse(int id);
     
     List<SectorDTO> getAllSectors();
     SectorDTO getSectorById(int id);
-    void addSector(SectorDTO dto);
-    void updateSector(SectorDTO dto);
+    SectorDTO addSector(SectorDTO dto);
+    SectorDTO updateSector(SectorDTO dto);
     void deleteSector(int id);
 }
